@@ -12,7 +12,7 @@ int main(void)
     
         if (num > sol)
            printf("%d>?\n", num);
-        else if
+        else if (num < sol)
            printf("%d<?\n", num);
         else
            printf("%d==?\n", num);
