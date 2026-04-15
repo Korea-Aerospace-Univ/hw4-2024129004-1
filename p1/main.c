@@ -21,7 +21,7 @@ int main(void)
           scanf("%d", num);
         }
     
-        if (num == sol) {
+        else {
            printf("%d==?\n", num);
            cnt++;
         }
