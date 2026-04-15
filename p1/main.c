@@ -5,7 +5,6 @@ int main(void)
   int sol, num, cnt=0;
   
   scanf("%d", sol);
-  getchar();
   scanf("%d", num);
   
 
@@ -19,7 +18,6 @@ int main(void)
            printf("%d<?\n", num);
            cnt++;
           }
-          getchar();
           scanf("%d", num);
         }
     
