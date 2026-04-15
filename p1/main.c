@@ -10,14 +10,12 @@ int main(void)
 
   do {
         if (num != sol) {
-          if (num > sol) {
+          
+          if (num > sol)
            printf("%d>?\n", num);
-           cnt++;
-          }
-          if (num < sol) {
+          else
            printf("%d<?\n", num);
-           cnt++;
-          }
+          cnt++;
           scanf("%d", &num);
         }
     
