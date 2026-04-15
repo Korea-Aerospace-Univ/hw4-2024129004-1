@@ -26,7 +26,7 @@ int main(void)
   }
   
   printf("%d\n", maxS); // 연속된 소문자 최대 개수 출력
-  printf("%d\n", maxN // 연속된 숫자 최대 개수 출력
+  printf("%d\n", maxN); // 연속된 숫자 최대 개수 출력
 
   return 0;
 }
