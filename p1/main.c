@@ -3,11 +3,13 @@
 int main(void)
 {
   int sol, num, cnt=0;
-
+  bool scanf_num = false;
+  
   scanf("%d", sol);
 
   do {
         scanf("%d", num);
+        scanf_num = true;
 
         if (num > sol) {
            printf("%d>?\n", num);
@@ -22,7 +24,7 @@ int main(void)
            cnt++;
         }
           
-  } while(num != sol);
+  } while(!scanf_num || num != sol);
 
   printf("%d", cnt);
 
