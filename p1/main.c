@@ -22,7 +22,7 @@ int main(void)
            cnt++;
         }
           
-  } while(num != sol)
+  } while(num != sol);
 
   printf("%d", cnt);
 
