@@ -4,8 +4,8 @@ int main(void)
 {
   int sol, num, cnt=0;
   
-  scanf("%d", sol);
-  scanf("%d", num);
+  scanf("%d", &sol);
+  scanf("%d", &num);
   
 
   do {
@@ -18,7 +18,7 @@ int main(void)
            printf("%d<?\n", num);
            cnt++;
           }
-          scanf("%d", num);
+          scanf("%d", &num);
         }
     
         else {
