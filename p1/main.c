@@ -19,6 +19,7 @@ int main(void)
            printf("%d<?\n", num);
            cnt++;
           }
+          getchar();
           scanf("%d", num);
         }
     
