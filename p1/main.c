@@ -13,14 +13,14 @@ int main(void)
     
         if (num != sol) {
           if (num > sol)
-           printf("%d>?\n", num);
+           printf("%d>? \n", num);
           else
-           printf("%d<?\n", num);
+           printf("%d<? \n", num);
           scanf("%d", &num);
         }
     
         else {
-           printf("%d==?\n", num);
+           printf("%d==? \n", num);
         }
   } while(num != sol);
 
