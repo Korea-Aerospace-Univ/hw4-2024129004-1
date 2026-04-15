@@ -2,31 +2,31 @@
 
 int main(void)
 {
-  int N, i;
-  char ch;
+  int N, i; // N:입력받을 문자 개수, i:반복문에서 사용할 변수
+  char ch; // ch: 한 글자씩 입력받을 문자 변수
 
-  int s=0, n=0;
-  int maxS=0, maxN=0;
+  int s=0, n=0; // s: 현재 연속된 영어 소문자 개수, n: 현재 연속된 숫자 문자 개수
+  int maxS=0, maxN=0; // maxS: 연속된 영어 소문자 최대 개수, maxN: 연속된 숫자 문자의 최대 개수
 
-  scanf("%d", &N);
+  scanf("%d", &N); // 전체 입력될 문자 개수를 먼저 입력 받음
 
   for(i=0; i<N; i++) {
-    scanf(" %c", &ch);
+    scanf(" %c", &ch); // 문자를 한글자씩 입력받음. 앞의 공백은 공백 문자 무시하기 위해 사용함
     if(ch>='a' && ch<= 'z') {
-      s++;
-      n=0;
-      if(s>maxS) maxS=s;
+      s++; // 소문자가 나오면 소문자 연속 개수 증가
+      n=0; // 숫자 연속은 끊기므로 0으로 초기화함
+      if(s>maxS) maxS=s; // 현재 소문자 연속 개수가 최대값보다 크면 갱신
     }
     
     else if(ch >= '0' && ch <= '9') {
-      n++;
-      s=0;
-      if(n>maxN) maxN=n;
+      n++; // 숫자가 나오면 숫자 연속 개수 증가
+      s=0; // 소문자 연속은 끊기므로 0으로 초기화
+      if(n>maxN) maxN=n; // 현재 숫자 연속 개수가 최대값보다 크면 갱신
     }
   }
   
-  printf("%d\n", maxS);
-  printf("%d\n", maxN);
+  printf("%d\n", maxS); // 연속된 소문자 최대 개수 출력
+  printf("%d\n", maxN // 연속된 숫자 최대 개수 출력
 
   return 0;
 }
