@@ -4,24 +4,18 @@ int main(void)
 {
   int sol, num, cnt=0;
   
-  scanf("%d", &sol);
-  scanf("%d", &num);
-  
+  scanf("%d", &sol); 
 
   do {
+        scanf("%d", &num);
         cnt++;
     
-        if (num != sol) {
-          if (num > sol)
-           printf("%d>? \n", num);
-          else
-           printf("%d<? \n", num);
-          scanf("%d", &num);
-        }
-    
-        else {
-           printf("%d==? \n", num);
-        }
+        if (num > sol)
+           printf("%d>?\n", num);
+        else if
+           printf("%d<?\n", num);
+        else
+           printf("%d==?\n", num);
   } while(num != sol);
 
   printf("%d", cnt);
