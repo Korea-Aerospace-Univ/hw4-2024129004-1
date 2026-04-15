@@ -8,7 +8,7 @@ int main(void)
   int s=0, n=0;
   int maxS=0, maxN=0;
 
-  scanf("%d", &n);
+  scanf("%d", &N);
 
   for(i=0; i<N; i++) {
     scanf(" %c", &ch);
